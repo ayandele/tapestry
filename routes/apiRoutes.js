@@ -7,7 +7,7 @@ const {
   deleteUser,
   addFriend,
   removeFriend,
-} = require('../controllers/user-controller');
+} = require('../controllers/user-controller.js');
 
 const {
   getAllThoughts,
@@ -15,7 +15,7 @@ const {
   createThought,
   updateThought,
   deleteThought,
-} = require('../controllers/thought-controller');
+} = require('../controllers/thought-controller.js');
 
 // Define user routes
 router.route('/users').get(getAllUsers).post(createUser);
