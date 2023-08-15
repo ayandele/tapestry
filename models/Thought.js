@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
+const reactionSchema = require('./Reaction'); // Make sure the path is correct
+
 const thoughtSchema = new Schema({
   thoughtText: {
     type: String,
@@ -11,7 +13,6 @@ const thoughtSchema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-    get: (timestamp) => dateFormat(timestamp),
   },
   username: {
     type: String,
