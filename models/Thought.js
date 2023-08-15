@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const reactionSchema = require('./Reaction'); // Make sure the path is correct
+const reactionSchema = require('./models/Reaction'); 
 
 const thoughtSchema = new Schema({
   thoughtText: {
